@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>FCC: Personal Portfolio</title>
 </head>
 
@@ -12,19 +13,19 @@
     <header>
 
         <!-- navbar -->
-        <nav id="nav-bar">
+        <nav id="navbar">
             <div class="container">
                 <ul>
-                    <a class="nav-link" href="">About</a>
-                    <a class="nav-link" href="">Work</a>
-                    <a class="nav-link" href="">Contact</a>
+                    <a class="nav-link" href="#welcome-section">About</a>
+                    <a class="nav-link" href="#work">Work</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </ul>
             </div>
         </nav>
 
         <!-- title and hero image -->
         <div class="hero-image">
-            <section class="welcome-section">
+            <section id="welcome-section">
                 <h1>Ivan Ansari</h1>
                 <h3>A web developer.</h3>
             </section>
@@ -34,22 +35,39 @@
 
     <main>
 
+        <!-- Projects showcase -->
         <section class="my-work">
             <div id="work" class="container">
                 <h2>These are some of my projects...</h2>
                 <div id="projects">
-                    <div class="project-card">
-                        <img class="project-image" src="" alt="">
-                        <p class="project-name"></p>
-                    </div>
-                    <div class="project-card">
-                        <img class="project-image" src="" alt="">
-                        <p class="project-name"></p>
-                    </div>
-                    <div class="project-card">
-                        <img class="project-image" src="" alt="">
-                        <p class="project-name"></p>
-                    </div>
+                    <a class="project-card" href="https://ianto3.github.io/TinDog/" target="_blank">
+                        <img class="project-image" src="images/tindogs.png" alt="tindogs project">
+                        <p class="project-name">tindogs</p>
+                    </a>
+                    <a class="project-card" href="https://ianto3.github.io/Museum_Of_Candy/" target="_blank">
+                        <img class="project-image" src="images/museum_candy.png" alt="tindogs project">
+                        <p class="project-name">Museum of candy</p>
+                    </a>
+                    <a class="project-card" href="https://ianto3.github.io/FCC_survey_form/" target="_blank">
+                        <img class="project-image" src="images/survey_form.png" alt="survey form project">
+                        <p class="project-name">Survey form</p>
+                    </a>
+                </div>
+                <a href="https://codepen.io/ianto3" class="btn">View more!</a>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Let's work together...</h2>
+                <div class="contact-profiles">
+                    <a href="https://codepen.io/ianto3" class="contact-link"><img
+                            src="https://raw.githubusercontent.com/ianto3/FCC_personal_site/b118e0dfffd89c5ea6c86a8a176363a1d4bfb58a/images/codepen-brands.svg"
+                            alt="codepen contact"></a>
+                    <a href="https://github.com/ianto3" class="contact-link"><img
+                            src="https://raw.githubusercontent.com/ianto3/FCC_personal_site/b118e0dfffd89c5ea6c86a8a176363a1d4bfb58a/images/github-square-brands.svg"
+                            alt="github contact"></a>
                 </div>
             </div>
         </section>
